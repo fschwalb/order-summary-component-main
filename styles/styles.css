@@ -1,0 +1,208 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Root */
+
+:root {
+
+    /* Fonts */ 
+
+    --Primary_font: 'Red Hat Display', sans-serif;
+
+    /* Primary */
+
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+
+    /* Custom */
+
+    --White: rgb(255, 255, 255);
+    --Gray: rgb(121, 121, 121);
+    --Gray_light: #f4f4f8;
+
+}
+
+
+/* CODE START */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--Primary_font);
+    
+    background: no-repeat center/cover url('../images/pattern-background-mobile.svg');
+    background-color: var(--Pale_blue);
+}
+
+body h2 {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+
+body #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--White);
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+
+    width: 328px;
+    height: 566px;
+}
+
+.card .info-top .info-top_main img {
+    width: 100%;
+}
+
+.card .info-top .info-top_main h1 {
+    font-size: 24px;
+    margin: 28px 0 0 0;
+}
+
+.card .info-top .info-top_main p {
+    color: var(--Gray);
+    font-weight: 500;
+    line-height: 28px;
+    margin: 20px 30px ;
+}
+
+.card .info-top .info-top_plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 12px auto;
+    background-color: var(--Gray_light);
+    border-radius: 15px;
+}
+
+.card .info-top .info-top_plan img {
+    width: 46px;
+    height: 46px;
+}
+
+.card .info-top .info-top_plan .info-top_plan-info {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.card .info-top .info-top_plan .info-top_plan-info h2 {
+    font-size: 14px;
+    font-weight: 900;
+    margin: 20px 0 0 0;
+}
+
+.card .info-top .info-top_plan .info-top_plan-info p {
+    font-size: 14px;
+    color: var(--Gray);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.card .info-top .info-top_plan .info-top_btn {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--Bright_blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.info-bottom .btn-main {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--Bright_blue);
+    font-family: var(--Primary_font);
+    transition: all .3s ease;
+}
+.info-bottom .btn-main:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.info-bottom .btn-secondary {
+    display: block;
+    width: 85%;
+    margin: 5px auto 0 auto;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: var(--Primary_font);
+    font-size: 14px;
+    color: var(--Gray);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.info-bottom .btn-secondary:hover {
+    color: var(--White);
+    background-color: var(--Gray);
+}
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+
+/* Attribution Frontend Mentor */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Media Queries */
+
+@media all and (min-width: 1440px) {
+    body {
+        background: no-repeat center/cover url('../images/pattern-background-desktop.svg');
+        background-color: var(--Pale_blue);
+    }
+
+    .card {
+        margin: -5px 0 0 0;
+
+        width: 406px;
+        height: 629px;
+    }
+
+    .card .info-top .info-top_main img {
+        width: 100%;
+    }
+
+    .info-bottom {
+        margin-top: 30px;
+    }
+
+    .info-bottom .btn-secondary {
+        margin-top: 10px;
+    }
+}
+
+
+/* CODE END */
